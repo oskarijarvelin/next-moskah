@@ -8,7 +8,23 @@ export default function Index() {
     return (
         <>
             <Head>
-                <title>Moskah - Se raskaampi rockyhtye</title>
+                <title>Moskah - Se raskaampi rockyhtye - #rokkipitääsielunpuhtaana</title>
+                <meta name="description" content="Tämä mielenkiintoisena liveaktina tunnettu kvartetti kantaa rockin lippua harteillaan ylpeänä. Moskah on perustettu 2014 Oulussa." />
+                <link rel="canonical" href="https://moskah.vercel.app/" />
+                <meta property="og:locale" content="fi_FI" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Moskah - Se raskaampi rockyhtye - #rokkipitääsielunpuhtaana" />
+                <meta property="og:description" content="Tämä mielenkiintoisena liveaktina tunnettu kvartetti kantaa rockin lippua harteillaan ylpeänä. Moskah on perustettu 2014 Oulussa." />
+                <meta property="og:url" content="https://moskah.vercel.app/" />
+                <meta property="og:site_name" content="Moskah" />
+                <meta property="og:image" content="https://moskah.vercel.app/promo.jpg" />
+                <meta property="og:image:width" content="600" />
+                <meta property="og:image:height" content="400" />
+                <meta property="og:image:type" content="image/jpeg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Moskah - Se raskaampi rockyhtye - #rokkipitääsielunpuhtaana" />
+                <meta name="twitter:description" content="Tämä mielenkiintoisena liveaktina tunnettu kvartetti kantaa rockin lippua harteillaan ylpeänä. Moskah on perustettu 2014 Oulussa." />
+                <meta name="twitter:image" content="https://moskah.vercel.app/promo.jpg" />
                 <link rel="icon" type="image/png" sizes="512x512"  href="/favicon.png"></link>
             </Head>
             <Box bg='black' color='white' minH='100vh' py={20} px={{base: 4, md: 16}} position='relative' bgImage='url(/bg.jpg)' bgSize='cover' bgAttachment='fixed'>
@@ -17,8 +33,8 @@ export default function Index() {
                     <Flex mb={40} px={{base: 10, sm: 20}}>
                         <Spacer />
                             <NextLink href="/" passHref>
-                                <Link>
-                                    <Image src='/logo.png' width={600} height={206} />
+                                <Link title='Moskah-logo'>
+                                    <Image src='/logo.webp' alt='Moskah-logo' width={600} height={206} />
                                 </Link>
                             </NextLink>
                         <Spacer />
@@ -26,35 +42,35 @@ export default function Index() {
 
                     <Flex mb={40} justifyContent='center' fontSize={28}>
                         <NextLink href="https://www.facebook.com/moskahband/" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah Facebookissa'>
                                 <Icon as={FaFacebook} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://www.instagram.com/moskahband/" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah Instagramissa'>
                                 <Icon as={FaInstagram} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://www.youtube.com/channel/UC30ncG5cABdfMUEFHUC4r-A" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah YouTubessa'>
                                 <Icon as={FaYoutube} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://open.spotify.com/artist/4gUwAFzkMf7cRVQzemBIHw" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah Spotifyssa'>
                                 <Icon as={FaSpotify} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://moskah.bandcamp.com/" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah Bandcampissa'>
                                 <Icon as={FaBandcamp} />
                             </Link>
                         </NextLink>
@@ -63,9 +79,9 @@ export default function Index() {
                     <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 20, lg: 40}}>
                         <Box>
                             <NextLink href="https://www.youtube.com/watch?v=da4qaT6fQmY" passHref>
-                                <Link isExternal>
+                                <Link isExternal title='Mustakirja-musiikkivideo YouTubessa'>
                                     <Box display='flex' boxShadow='dark-lg' pos='relative'>
-                                        <Image src='/mustakirja.png' width={600} height={338} />
+                                        <Image src='/mustakirja.webp' alt='Ruutukaappaus Mustakirja-musiikkivideosta' width={600} height={338} />
                                         <Icon as={FaRegPlayCircle} color='white' fontSize={96} pos='absolute' top='calc(50% - 48px)' left='calc(50% - 48px)' />
                                     </Box>
                                 </Link>
@@ -98,7 +114,7 @@ export default function Index() {
                         </Box>
                         <Box order={{base: 1, lg: 2}}>
                             <Box display='flex' boxShadow='dark-lg'>
-                                <Image src='/promo.jpg' width={600} height={400} />
+                                <Image src='/promo.webp' alt='Moskah promokuva' width={600} height={400} />
                             </Box>
                         </Box>
                     </SimpleGrid>
@@ -106,7 +122,7 @@ export default function Index() {
                     <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 30, lg: 60}}>
                         <Box>
                             <Box display='flex' boxShadow='dark-lg'>
-                                <Image src='/keikka.jpg' width={600} height={450} />
+                                <Image src='/keikka.webp' alt='Moskah keikalla' width={600} height={450} />
                             </Box>
                         </Box>
                         <Box>
@@ -187,35 +203,35 @@ export default function Index() {
 
                     <Flex mb={40} justifyContent='center' fontSize={28}>
                         <NextLink href="https://www.facebook.com/moskahband/" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah Facebookissa'>
                                 <Icon as={FaFacebook} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://www.instagram.com/moskahband/" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah Instagramissa'>
                                 <Icon as={FaInstagram} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://www.youtube.com/channel/UC30ncG5cABdfMUEFHUC4r-A" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah YouTubessa'>
                                 <Icon as={FaYoutube} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://open.spotify.com/artist/4gUwAFzkMf7cRVQzemBIHw" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah Spotifyssa'>
                                 <Icon as={FaSpotify} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://moskah.bandcamp.com/" passHref>
-                            <Link isExternal color='white' mx={4}>
+                            <Link isExternal color='white' mx={4} title='Moskah Bandcampissa'>
                                 <Icon as={FaBandcamp} />
                             </Link>
                         </NextLink>
@@ -223,7 +239,7 @@ export default function Index() {
 
                     <Flex px={{base: 10, sm: 20}} mb={20}>
                         <Spacer />
-                            <Image src='/vakkara.png' width={200} height={200} />
+                            <Image src='/vakkara.webp' alt='Moskah-symboli' width={200} height={200} />
                         <Spacer />
                     </Flex>
                     
