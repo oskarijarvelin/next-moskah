@@ -33,8 +33,10 @@ const theme = extendTheme({
             sizes: {
                 md: {
                     fontSize: {
-                        base: 36,
-                        md: 48
+                        base: 30,
+                        md: 40,
+                        lg: 36,
+                        xl: 48
                     },
                 },
             },
@@ -69,7 +71,12 @@ const theme = extendTheme({
             baseStyle: {
                 fontSize: {
                     base: 18,
-                    md: 22
+                    md: 22,
+
+                    base: 18,
+                    md: 20,
+                    lg: 18,
+                    xl: 22
                 },
                 mb: 8,
             },
