@@ -30,7 +30,7 @@ export default function Index() {
             <Box bg='black' color='white' minH='100vh' py={20} px={{base: 4, md: 16}} position='relative' bgImage='url(/bg.webp)' bgSize='cover' bgAttachment='fixed'>
                 <Container maxW='1312px'>
 
-                    <Flex mb={40} px={{base: 10, sm: 20}}>
+                    <Flex mb={{base: 16, sm: 40}} px={{base: 10, sm: 20}}>
                         <Spacer />
                             <NextLink href="/" passHref>
                                 <Link title='Moskah-logo'>
@@ -40,7 +40,7 @@ export default function Index() {
                         <Spacer />
                     </Flex>
 
-                    <Flex mb={40} justifyContent='center' fontSize={28}>
+                    <Flex mb={{base: 16, sm: 40}} justifyContent='center' fontSize={28}>
                         <NextLink href="https://www.facebook.com/moskahband/" passHref>
                             <Link isExternal color='white' mx={4} title='Moskah Facebookissa'>
                                 <Icon as={FaFacebook} />
@@ -76,13 +76,13 @@ export default function Index() {
                         </NextLink>
                     </Flex>
 
-                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 20, lg: 40}}>
+                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 16, lg: 40}}>
                         <Box>
                             <NextLink href="https://www.youtube.com/watch?v=da4qaT6fQmY" passHref>
                                 <Link isExternal title='Mustakirja-musiikkivideo YouTubessa'>
                                     <Box display='flex' boxShadow='dark-lg' pos='relative' bgColor='black'>
-                                        <Image src='/mustakirja.webp' alt='Ruutukaappaus Mustakirja-musiikkivideosta' width={600} height={338} />
-                                        <Icon as={FaRegPlayCircle} color='white' fontSize={96} pos='absolute' top='calc(50% - 48px)' left='calc(50% - 48px)' />
+                                        <Image src='/mustakirja.webp' alt='Ruutukaappaus Mustakirja-musiikkivideosta' width={800} height={450} />
+                                        <Icon as={FaRegPlayCircle} color='white' fontSize={{base: 48, lg: 96}} pos='absolute' top={{base: 'calc(50% - 24px)', lg: 'calc(50% - 48px)'}} left={{base: 'calc(50% - 24px)', lg: 'calc(50% - 48px)'}} />
                                     </Box>
                                 </Link>
                             </NextLink>
@@ -94,7 +94,7 @@ export default function Index() {
                         </Box>
                     </SimpleGrid>
 
-                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 20, lg: 40}}>
+                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 32, lg: 40}}>
                         <Box order={{base: 2, lg: 1}}>
                             <Heading>Discografia</Heading>
                             
@@ -114,15 +114,15 @@ export default function Index() {
                         </Box>
                         <Box order={{base: 1, lg: 2}}>
                             <Box display='flex' boxShadow='dark-lg' bgColor='black'>
-                                <Image src='/promo.webp' alt='Moskah promokuva' width={600} height={400} />
+                                <Image src='/promo.webp' alt='Moskah promokuva' width={800} height={534} />
                             </Box>
                         </Box>
                     </SimpleGrid>
 
-                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 30, lg: 60}}>
+                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 40, lg: 60}}>
                         <Box>
                             <Box display='flex' boxShadow='dark-lg' bgColor='black'>
-                                <Image src='/keikka.webp' alt='Moskah keikalla' width={600} height={450} />
+                                <Image src='/keikka.webp' alt='Moskah keikalla' width={800} height={600} />
                             </Box>
                         </Box>
                         <Box>
@@ -151,7 +151,7 @@ export default function Index() {
                         </Box>
                     </SimpleGrid>
 
-                    <Container maxW={600} textAlign='center' mb={{base: 30, lg: 60}}>
+                    <Container maxW={600} textAlign='center' mb={{base: 40, lg: 60}}>
                         <Heading fontSize={{base: 36, md: 56}} mb={12}>Imperiumin levyarvostelu Selviytyjän Syndroomasta</Heading>
                         <Text fontSize={24}>
                             <i>”Selviytyjän syndrooma on erittäin hyvin tehty levyllinen raskasta rockia, ja jos synkkyyteen taipuvainen raskaampi suomirock maistuu, on Moskah ilman muuta vilkaisun arvoinen yhtye.”
@@ -162,7 +162,7 @@ export default function Index() {
                         </Text>
                     </Container>
 
-                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={20} mb={{base: 20, lg: 40}}>
+                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 20, lg: 40}}>
                         <Box>
                             <Heading>Kokoonopano</Heading>
                             
@@ -201,7 +201,7 @@ export default function Index() {
                         </Box>
                     </SimpleGrid>
 
-                    <Flex mb={40} justifyContent='center' fontSize={28}>
+                    <Flex mb={{base: 16, sm: 40}} justifyContent='center' fontSize={28}>
                         <NextLink href="https://www.facebook.com/moskahband/" passHref>
                             <Link isExternal color='white' mx={4} title='Moskah Facebookissa'>
                                 <Icon as={FaFacebook} />
