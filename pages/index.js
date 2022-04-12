@@ -1,5 +1,5 @@
-import { Container, SimpleGrid, Flex, Spacer, Box, Heading, Text, Button, Link } from '@chakra-ui/react'
-import { FaCalendarAlt } from 'react-icons/fa'
+import { Container, SimpleGrid, Flex, Spacer, Box, Heading, Text, Button, Link, Icon } from '@chakra-ui/react'
+import { FaRegPlayCircle, FaCalendarAlt, FaFacebook, FaInstagram, FaYoutube, FaSpotify, FaBandcamp } from 'react-icons/fa'
 import Head from 'next/head'
 import Image from 'next/image'
 import NextLink from 'next/link'
@@ -16,13 +16,60 @@ export default function Index() {
 
                     <Flex mb={40} px={{base: 10, sm: 20}}>
                         <Spacer />
-                            <Image src='/logo.png' width={600} height={206} />
+                            <NextLink href="/" passHref>
+                                <Link>
+                                    <Image src='/logo.png' width={600} height={206} />
+                                </Link>
+                            </NextLink>
                         <Spacer />
+                    </Flex>
+
+                    <Flex mb={40} justifyContent='center' fontSize={28}>
+                        <NextLink href="https://www.facebook.com/moskahband/" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaFacebook} />
+                            </Link>
+                        </NextLink>
+
+                        
+                        <NextLink href="https://www.instagram.com/moskahband/" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaInstagram} />
+                            </Link>
+                        </NextLink>
+
+                        
+                        <NextLink href="https://www.youtube.com/channel/UC30ncG5cABdfMUEFHUC4r-A" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaYoutube} />
+                            </Link>
+                        </NextLink>
+
+                        
+                        <NextLink href="https://open.spotify.com/artist/4gUwAFzkMf7cRVQzemBIHw" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaSpotify} />
+                            </Link>
+                        </NextLink>
+
+                        
+                        <NextLink href="https://moskah.bandcamp.com/" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaBandcamp} />
+                            </Link>
+                        </NextLink>
                     </Flex>
 
                     <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 20, lg: 40}}>
                         <Box>
-                            <Image src='/mustakirja.png' width={600} height={338} />
+                            <NextLink href="https://www.youtube.com/watch?v=da4qaT6fQmY" passHref>
+                                <Link isExternal>
+                                    <Box display='flex' boxShadow='dark-lg' pos='relative'>
+                                        <Image src='/mustakirja.png' width={600} height={338} />
+                                        <Icon as={FaRegPlayCircle} color='white' fontSize={96} pos='absolute' top='calc(50% - 48px)' left='calc(50% - 48px)' />
+                                    </Box>
+                                </Link>
+                            </NextLink>
                         </Box>
                         <Box>
                             <Heading as='h1'>#rokkipitääsielunpuhtaana</Heading>
@@ -35,19 +82,19 @@ export default function Index() {
                         <Box order={{base: 2, lg: 1}}>
                             <Heading>Discografia</Heading>
                             
-                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2015</Text> julkaistu <i>Ennustus</i> -single ja siihen kuvattu musiikkivideo, jo puretulla Martinniemen sahalla, oli ensimmäinen esiintulo musiikillisesti.</Text>
+                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2015</Text> julkaistu <i>”Ennustus”</i> -single ja siihen kuvattu musiikkivideo, jo puretulla Martinniemen sahalla, oli ensimmäinen esiintulo musiikillisesti.</Text>
 
                             <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2016</Text> Ensimmäisen pitkäsoittomme julkaisu. Levyltä lohkaistiin musiikivideot <i>”Polku”</i> ja <i>”Aika”</i> -kappaleista. Tämä albumi aukaisi ovet keikoille mm. Snookertime, Oulu, joka oli yhtyeen ensimmäinen keikka.</Text>
 
-                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2017</Text> <i>Etsijä</i> -single julkaistiin ja oli yhtyeen viimeinen täysin itse äänityksistä julkaisuun tehty tuotos.</Text>
+                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2017</Text> <NextLink href="https://open.spotify.com/album/2OJB4pawmaYSj5B8XRxgI1" passHref><Link isExternal><i>”Etsijä”</i></Link></NextLink> -single julkaistiin ja oli yhtyeen viimeinen täysin itse äänityksistä julkaisuun tehty tuotos.</Text>
 
-                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2018</Text> <i>Yhden Illan Galleria</i> -EP äänitettiin Surfsound Finlandilla Oulussa, Janne Huotarin toimiessa äänittäjänä. Pasi Hieta toimi YIG:n tuottajana ja miksaajana. YIG:n masteroi Hannu Marjakangas. EP:ltä lohkaistiin musiikkivideo <i>”Kulkijat”</i> -kappaleesta, joka kuvattiin Oulun yliopiston eläinmuseossa.</Text>
+                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2018</Text> <NextLink href="https://open.spotify.com/album/0mSJrRk4IknbuHA6S3dXkP" passHref><Link isExternal><i>”Yhden Illan Galleria”</i></Link></NextLink> -EP äänitettiin Surfsound Finlandilla Oulussa, Janne Huotarin toimiessa äänittäjänä. <i>Pasi Hieta</i> toimi YIG:n tuottajana ja miksaajana. YIG:n masteroi <i>Hannu Marjakangas</i>. EP:ltä lohkaistiin musiikkivideo <NextLink href="https://www.youtube.com/watch?v=U43GUMW5VpY" passHref><Link isExternal><i>”Kulkijat”</i></Link></NextLink> -kappaleesta, joka kuvattiin Oulun yliopiston eläinmuseossa.</Text>
 
-                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2020</Text> ilmestyi <i>Selviytyjän Syndrooma</i> -albumi. Albumi äänitettiin yhteistyössä <i>Snowroads Studiosin</i> kanssa. Albumin miksasi ja masteroi JP Pulkkinen. Levyltä lohkaistiin musiikivideot <i>”Nouse Raunioista”</i>– ja <i>”Iijoki”</i> -kappaleista.</Text>
+                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2020</Text> ilmestyi <NextLink href="https://open.spotify.com/album/1pisATBoO2OWCCf2wcmrTt" passHref><Link isExternal><i>”Selviytyjän Syndrooma”</i></Link></NextLink> -albumi. Albumi äänitettiin yhteistyössä <NextLink href="http://snowroadstudios.com/" passHref><Link isExternal><i>Snowroads Studiosin</i></Link></NextLink> kanssa. Albumin miksasi ja masteroi <i>JP Pulkkinen</i>. Levyltä lohkaistiin musiikivideot <NextLink href="https://www.youtube.com/watch?v=8QAZ3AeH8K8" passHref><Link isExternal><i>”Nouse Raunioista”</i></Link></NextLink>– ja <NextLink href="https://www.youtube.com/watch?v=y2q8qemI36E" passHref><Link isExternal><i>”Iijoki”</i></Link></NextLink> -kappaleista.</Text>
 
-                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2021</Text> Fata Morgana -EP näki päivänvalon. Levy äänitettiin Space Studiosilla Oulussa. EP:n miksasi sekä masteroi Janne Huotari. Levyn <i>”Mustakirja”</i> -kappaleesta tehtiin musiikkivideo, jonka käsikirjoittivat Eerik Mehtälä sekä Oskari Järvelin. Antti Lauronen sai olla yhtyeen ensimmäinen musiikkivideossa toiminut ammattinäyttelijä.</Text>
+                            <Text><Text as='span' color='blue' fontWeight='700' textShadow='1px 1px 6px #0E1211'>2021</Text> <NextLink href="https://open.spotify.com/album/1BDTUsER7uT9nxVvWwelI1" passHref><Link isExternal><i>”Fata Morgana”</i></Link></NextLink> -EP näki päivänvalon. Levy äänitettiin <i>Space Studiosilla</i> Oulussa. EP:n miksasi sekä masteroi <i>Janne Huotari</i>. Levyn <NextLink href="https://www.youtube.com/watch?v=da4qaT6fQmY" passHref><Link isExternal><i>”Mustakirja”</i></Link></NextLink> -kappaleesta tehtiin musiikkivideo, jonka käsikirjoittivat <i>Eerik Mehtälä</i> sekä <i>Oskari Järvelin</i>. <i>Antti Lauronen</i> sai olla yhtyeen ensimmäinen musiikkivideossa toiminut ammattinäyttelijä.</Text>
 
-                            <Text>Kaaoszinen demonurkka Mustastakirjasta; <i>”Tämän viikon demonurkan voiton vie Moskah, joka lunastaa mahdollisuuden päästä esiintymään Nummirockiin. Onnittelut ukoille, jatkakaa samaan malliin!”</i> Demonurkka vol. 185 (vk 50/2021).</Text>
+                            <Text>Kaaoszinen demonurkka Mustastakirjasta; <i>”Tämän viikon demonurkan voiton vie Moskah, joka lunastaa mahdollisuuden päästä esiintymään Nummirockiin. Onnittelut ukoille, jatkakaa samaan malliin!”</i><br /><NextLink href="https://kaaoszine.fi/demonurkka-vol-185-vk-50-2021-johanna-oikolukee-loppuun/" passHref><Link isExternal>Demonurkka vol. 185</Link></NextLink> (vk 50/2021).</Text>
                         </Box>
                         <Box order={{base: 1, lg: 2}}>
                             <Box display='flex' boxShadow='dark-lg'>
@@ -56,7 +103,7 @@ export default function Index() {
                         </Box>
                     </SimpleGrid>
 
-                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 20, lg: 40}}>
+                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 30, lg: 60}}>
                         <Box>
                             <Box display='flex' boxShadow='dark-lg'>
                                 <Image src='/keikka.jpg' width={600} height={450} />
@@ -80,13 +127,26 @@ export default function Index() {
                                 </NextLink>
                             </Text>
 
-                            <Button leftIcon={<FaCalendarAlt />} colorScheme='blue' variant='solid' iconSpacing={4} boxShadow='2xl'>
-                                Keikkakalenteri
-                            </Button>
+                            <NextLink href="https://www.songkick.com/artists/10062200-moskah/calendar" passHref>
+                                <Button as='a' leftIcon={<FaCalendarAlt />} colorScheme='blue' variant='solid' iconSpacing={4} boxShadow='2xl' target='_blank'>
+                                    Keikkakalenteri
+                                </Button>
+                            </NextLink>
                         </Box>
                     </SimpleGrid>
 
-                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={20} fontSize={22} mb={{base: 20, lg: 40}}>
+                    <Container maxW={600} textAlign='center' mb={{base: 30, lg: 60}}>
+                        <Heading fontSize={{base: 36, md: 56}} mb={12}>Imperiumin levyarvostelu Selviytyjän Syndroomasta</Heading>
+                        <Text fontSize={24}>
+                            <i>”Selviytyjän syndrooma on erittäin hyvin tehty levyllinen raskasta rockia, ja jos synkkyyteen taipuvainen raskaampi suomirock maistuu, on Moskah ilman muuta vilkaisun arvoinen yhtye.”
+                            </i>
+                        </Text>
+                        <Text color='blue'>
+                            <b>Ville Toivanen</b>
+                        </Text>
+                    </Container>
+
+                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={20} mb={{base: 20, lg: 40}}>
                         <Box>
                             <Heading>Kokoonopano</Heading>
                             
@@ -124,6 +184,42 @@ export default function Index() {
                             </Text>
                         </Box>
                     </SimpleGrid>
+
+                    <Flex mb={40} justifyContent='center' fontSize={28}>
+                        <NextLink href="https://www.facebook.com/moskahband/" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaFacebook} />
+                            </Link>
+                        </NextLink>
+
+                        
+                        <NextLink href="https://www.instagram.com/moskahband/" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaInstagram} />
+                            </Link>
+                        </NextLink>
+
+                        
+                        <NextLink href="https://www.youtube.com/channel/UC30ncG5cABdfMUEFHUC4r-A" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaYoutube} />
+                            </Link>
+                        </NextLink>
+
+                        
+                        <NextLink href="https://open.spotify.com/artist/4gUwAFzkMf7cRVQzemBIHw" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaSpotify} />
+                            </Link>
+                        </NextLink>
+
+                        
+                        <NextLink href="https://moskah.bandcamp.com/" passHref>
+                            <Link isExternal color='white' mx={4}>
+                                <Icon as={FaBandcamp} />
+                            </Link>
+                        </NextLink>
+                    </Flex>
 
                     <Flex px={{base: 10, sm: 20}} mb={20}>
                         <Spacer />
