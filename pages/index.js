@@ -27,7 +27,7 @@ export default function Index() {
                 <meta name="twitter:image" content="https://moskah.vercel.app/promo.jpg" />
                 <link rel="icon" type="image/png" sizes="512x512"  href="/favicon.png"></link>
             </Head>
-            <Box bg='black' color='white' minH='100vh' py={20} px={{base: 4, md: 16}} position='relative' bgImage='url(/bg.webp)' bgSize='cover' bgAttachment='fixed'>
+            <Box bg='black' color='white' h='100%' minH='100vh' py={20} px={{base: 4, md: 16}} pos='relative' bgImage='url(/bg.webp)' bgSize='cover' bgAttachment='fixed'>
                 <Container maxW='1312px'>
 
                     <Flex mb={{base: 16, sm: 24, xl: 32}} px={{base: 10, sm: 20}}>
@@ -80,7 +80,7 @@ export default function Index() {
                         <Box>
                             <NextLink href="https://www.youtube.com/watch?v=da4qaT6fQmY" passHref>
                                 <Link isExternal title='Mustakirja-musiikkivideo YouTubessa'>
-                                    <Box display='flex' boxShadow='dark-lg' pos='relative' bgColor='black'>
+                                    <Box d='flex' boxShadow='dark-lg' pos='relative' bgColor='black'>
                                         <Image src='/mustakirja.webp' alt='Ruutukaappaus Mustakirja-musiikkivideosta' width={800} height={450} />
                                         <Icon as={FaRegPlayCircle} color='white' fontSize={{base: 48, lg: 96}} pos='absolute' top={{base: 'calc(50% - 24px)', lg: 'calc(50% - 48px)'}} left={{base: 'calc(50% - 24px)', lg: 'calc(50% - 48px)'}} />
                                     </Box>
@@ -113,7 +113,7 @@ export default function Index() {
                             <Text>Kaaoszinen demonurkka Mustastakirjasta; <i>”Tämän viikon demonurkan voiton vie Moskah, joka lunastaa mahdollisuuden päästä esiintymään Nummirockiin. Onnittelut ukoille, jatkakaa samaan malliin!”</i><br /><NextLink href="https://kaaoszine.fi/demonurkka-vol-185-vk-50-2021-johanna-oikolukee-loppuun/" passHref><Link isExternal>Demonurkka vol. 185</Link></NextLink> (vk 50/2021).</Text>
                         </Box>
                         <Box order={{base: 1, lg: 2}}>
-                            <Box display='flex' boxShadow='dark-lg' bgColor='black'>
+                            <Box d='flex' boxShadow='dark-lg' bgColor='black'>
                                 <Image src='/promo.webp' alt='Moskah promokuva' width={800} height={534} />
                             </Box>
                         </Box>
@@ -121,7 +121,7 @@ export default function Index() {
 
                     <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 40, lg: 60}}>
                         <Box>
-                            <Box display='flex' boxShadow='dark-lg' bgColor='black'>
+                            <Box d='flex' boxShadow='dark-lg' bgColor='black'>
                                 <Image src='/keikka.webp' alt='Moskah keikalla' width={800} height={600} />
                             </Box>
                         </Box>
