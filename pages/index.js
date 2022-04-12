@@ -11,8 +11,8 @@ export default function Index() {
                 <title>Moskah - Se raskaampi rockyhtye</title>
                 <link rel="icon" type="image/png" sizes="512x512"  href="/favicon.png"></link>
             </Head>
-            <Box bg='black' color='white' minH='100vh' py={20} position='relative' bgImage='url(/bg.jpg)' bgSize='cover' bgAttachment='fixed'>
-                <Container maxW='1280px'>
+            <Box bg='black' color='white' minH='100vh' py={20} px={{base: 4, md: 16}} position='relative' bgImage='url(/bg.jpg)' bgSize='cover' bgAttachment='fixed'>
+                <Container maxW='1312px'>
 
                     <Flex mb={40} px={{base: 10, sm: 20}}>
                         <Spacer />
