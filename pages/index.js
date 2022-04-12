@@ -40,37 +40,37 @@ export default function Index() {
                         <Spacer />
                     </Flex>
 
-                    <Flex mb={{base: 16, sm: 40}} justifyContent='center' fontSize={28}>
+                    <Flex mb={{base: 16, sm: 40}} justifyContent='center' fontSize={{base: 24, sm: 28}}>
                         <NextLink href="https://www.facebook.com/moskahband/" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah Facebookissa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Facebookissa'>
                                 <Icon as={FaFacebook} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://www.instagram.com/moskahband/" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah Instagramissa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Instagramissa'>
                                 <Icon as={FaInstagram} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://www.youtube.com/channel/UC30ncG5cABdfMUEFHUC4r-A" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah YouTubessa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah YouTubessa'>
                                 <Icon as={FaYoutube} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://open.spotify.com/artist/4gUwAFzkMf7cRVQzemBIHw" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah Spotifyssa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Spotifyssa'>
                                 <Icon as={FaSpotify} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://moskah.bandcamp.com/" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah Bandcampissa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Bandcampissa'>
                                 <Icon as={FaBandcamp} />
                             </Link>
                         </NextLink>
@@ -144,16 +144,16 @@ export default function Index() {
                             </Text>
 
                             <NextLink href="https://www.songkick.com/artists/10062200-moskah/calendar" passHref>
-                                <Button as='a' leftIcon={<FaCalendarAlt />} colorScheme='blue' variant='solid' iconSpacing={4} boxShadow='2xl' target='_blank'>
+                                <Button as='a' leftIcon={<FaCalendarAlt />} colorScheme='blue' variant='solid' fontSize={{base: 20, md: 24}} p={{base: 6, md: 8}} iconSpacing={4} boxShadow='2xl' target='_blank'>
                                     Keikkakalenteri
                                 </Button>
                             </NextLink>
                         </Box>
                     </SimpleGrid>
 
-                    <Container maxW={600} textAlign='center' mb={{base: 40, lg: 60}}>
-                        <Heading fontSize={{base: 36, md: 56}} mb={12}>Imperiumin levyarvostelu Selviytyjän Syndroomasta</Heading>
-                        <Text fontSize={24}>
+                    <Container maxW={600} textAlign='center' mb={{base: 40, lg: 60}} px={0}>
+                        <Heading fontSize={{base: 30, md: 56}} mb={{base: 8, md: 16}}>Imperiumin levyarvostelu Selviytyjän Syndroomasta</Heading>
+                        <Text fontSize={{base: 18, sm: 20, md: 24}}>
                             <i>”Selviytyjän syndrooma on erittäin hyvin tehty levyllinen raskasta rockia, ja jos synkkyyteen taipuvainen raskaampi suomirock maistuu, on Moskah ilman muuta vilkaisun arvoinen yhtye.”
                             </i>
                         </Text>
@@ -164,7 +164,7 @@ export default function Index() {
 
                     <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 20, lg: 40}}>
                         <Box>
-                            <Heading>Kokoonopano</Heading>
+                            <Heading>Kokoonpano</Heading>
                             
                             <Text>
                                 <b>Paavo Ihme</b> – basso/laulu<br />
@@ -201,37 +201,37 @@ export default function Index() {
                         </Box>
                     </SimpleGrid>
 
-                    <Flex mb={{base: 16, sm: 40}} justifyContent='center' fontSize={28}>
+                    <Flex mb={{base: 16, sm: 40}} justifyContent='center' fontSize={{base: 24, sm: 28}}>
                         <NextLink href="https://www.facebook.com/moskahband/" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah Facebookissa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Facebookissa'>
                                 <Icon as={FaFacebook} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://www.instagram.com/moskahband/" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah Instagramissa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Instagramissa'>
                                 <Icon as={FaInstagram} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://www.youtube.com/channel/UC30ncG5cABdfMUEFHUC4r-A" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah YouTubessa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah YouTubessa'>
                                 <Icon as={FaYoutube} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://open.spotify.com/artist/4gUwAFzkMf7cRVQzemBIHw" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah Spotifyssa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Spotifyssa'>
                                 <Icon as={FaSpotify} />
                             </Link>
                         </NextLink>
 
                         
                         <NextLink href="https://moskah.bandcamp.com/" passHref>
-                            <Link isExternal color='white' mx={4} title='Moskah Bandcampissa'>
+                            <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Bandcampissa'>
                                 <Icon as={FaBandcamp} />
                             </Link>
                         </NextLink>
