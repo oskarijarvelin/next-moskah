@@ -30,7 +30,7 @@ export default function Index() {
             <Box bg='black' color='white' minH='100vh' py={20} px={{base: 4, md: 16}} position='relative' bgImage='url(/bg.webp)' bgSize='cover' bgAttachment='fixed'>
                 <Container maxW='1312px'>
 
-                    <Flex mb={{base: 16, sm: 40}} px={{base: 10, sm: 20}}>
+                    <Flex mb={{base: 16, sm: 24, xl: 32}} px={{base: 10, sm: 20}}>
                         <Spacer />
                             <NextLink href="/" passHref>
                                 <Link title='Moskah-logo'>
@@ -201,7 +201,7 @@ export default function Index() {
                         </Box>
                     </SimpleGrid>
 
-                    <Flex mb={{base: 16, sm: 40}} justifyContent='center' fontSize={{base: 24, sm: 28}}>
+                    <Flex mb={{base: 16, sm: 24, xl: 40}} justifyContent='center' fontSize={{base: 24, sm: 28}}>
                         <NextLink href="https://www.facebook.com/moskahband/" passHref>
                             <Link isExternal color='white' mx={{base: 2, sm: 4}} title='Moskah Facebookissa'>
                                 <Icon as={FaFacebook} />
