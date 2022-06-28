@@ -25,10 +25,9 @@ const theme = extendTheme({
     components: {
         Heading: {
             baseStyle: {
-                color: '#0085A6',
+                color: '#E6E5E0',
                 fontWeight: 400,
                 mb: 8,
-                textShadow: '1px 4px 16px #0E1211',
             },
             sizes: {
                 md: {
@@ -82,7 +81,8 @@ const theme = extendTheme({
         },
         Link: {
             baseStyle: {
-                color: '#0085A6',
+                color: '#E6E5E0',
+                textDecoration: 'underline'
             },
         },
     },
