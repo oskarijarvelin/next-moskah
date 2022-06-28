@@ -78,10 +78,10 @@ export default function Index() {
 
                     <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 16, lg: 40}}>
                         <Box>
-                            <NextLink href="https://www.youtube.com/watch?v=da4qaT6fQmY" passHref>
-                                <Link isExternal title='Mustakirja-musiikkivideo YouTubessa'>
+                            <NextLink href="https://youtu.be/AuuHfYuTpn4" passHref>
+                                <Link isExternal title='Aika-livetallenne YouTubessa'>
                                     <Box d='flex' boxShadow='2xl' pos='relative' bgColor='black'>
-                                        <Image src='/mustakirja.webp' alt='Ruutukaappaus Mustakirja-musiikkivideosta' width={800} height={450} />
+                                        <img src='https://i.ytimg.com/vi/AuuHfYuTpn4/maxresdefault.jpg' alt='Ruutukaappaus Aika-livetallenteesta' width={800} height={450} />
                                         <Icon as={FaRegPlayCircle} color='white' fontSize={{base: 48, lg: 96}} pos='absolute' top={{base: 'calc(50% - 24px)', lg: 'calc(50% - 48px)'}} left={{base: 'calc(50% - 24px)', lg: 'calc(50% - 48px)'}} />
                                     </Box>
                                 </Link>
