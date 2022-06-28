@@ -80,7 +80,7 @@ export default function Index() {
                         <Box>
                             <NextLink href="https://www.youtube.com/watch?v=da4qaT6fQmY" passHref>
                                 <Link isExternal title='Mustakirja-musiikkivideo YouTubessa'>
-                                    <Box d='flex' boxShadow='dark-lg' pos='relative' bgColor='black'>
+                                    <Box d='flex' boxShadow='2xl' pos='relative' bgColor='black'>
                                         <Image src='/mustakirja.webp' alt='Ruutukaappaus Mustakirja-musiikkivideosta' width={800} height={450} />
                                         <Icon as={FaRegPlayCircle} color='white' fontSize={{base: 48, lg: 96}} pos='absolute' top={{base: 'calc(50% - 24px)', lg: 'calc(50% - 48px)'}} left={{base: 'calc(50% - 24px)', lg: 'calc(50% - 48px)'}} />
                                     </Box>
@@ -113,15 +113,15 @@ export default function Index() {
                             <Text>Kaaoszinen demonurkka Mustastakirjasta; <i>”Tämän viikon demonurkan voiton vie Moskah, joka lunastaa mahdollisuuden päästä esiintymään Nummirockiin. Onnittelut ukoille, jatkakaa samaan malliin!”</i><br /><NextLink href="https://kaaoszine.fi/demonurkka-vol-185-vk-50-2021-johanna-oikolukee-loppuun/" passHref><Link isExternal>Demonurkka vol. 185</Link></NextLink> (vk 50/2021).</Text>
                         </Box>
                         <Box order={{base: 1, lg: 2}}>
-                            <Box d='flex' boxShadow='dark-lg' bgColor='black'>
-                                <Image src='/promo.webp' alt='Moskah promokuva' width={800} height={534} />
+                            <Box d='flex' boxShadow='2xl' bgColor='black'>
+                                <Image src='/promo2022.webp' alt='Moskah promokuva' width={800} height={450} />
                             </Box>
                         </Box>
                     </SimpleGrid>
 
                     <SimpleGrid columns={{base: 1, lg: 2}} spacing={{base: 10, lg: 20}} mb={{base: 40, lg: 60}}>
                         <Box>
-                            <Box d='flex' boxShadow='dark-lg' bgColor='black'>
+                            <Box d='flex' boxShadow='2xl' bgColor='black'>
                                 <Image src='/keikka2022.webp' alt='Moskah keikalla' width={800} height={533} />
                             </Box>
                         </Box>
